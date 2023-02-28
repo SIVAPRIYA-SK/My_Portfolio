@@ -81,7 +81,7 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
 }
 
-.about-col-1{
+/* .about-col-1{
     flex-basis: 35%;
     border-radius: 15px;
     height: 70px;
@@ -89,6 +89,19 @@ nav ul li a:hover::after{
 }
 .about-col-2{
     flex-basis: 60%;
+} */
+
+.about-col-1{
+    flex-basis: 35%;
+    border-radius: 15px;
+    height: -70px;
+    width: 50%;
+}
+.about-col-2{
+    flex-basis: 60%;
+    width: fit-content;
+    width: 50%;
+    font-size: 20px;
 }
 
 .sub-title{
@@ -174,7 +187,7 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 }
 
-/*---------------------------portfolio-------------------- */
+/*---------------------------My works-------------------- */
 #portfolio{
     padding: 50px 0;
 }
@@ -317,24 +330,6 @@ form .btn2{
     color: #ff004f;
 }
 
-/* --------------timeline---------------------- */
-.timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.timeline::before {
-    content: '';
-    position: absolute;
-    width: 3px;
-    background-color: white;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -380px;
-}
-
 /* --------------css for small screens -------------------*/
 nav .fas{
     display: none;
@@ -439,7 +434,8 @@ h2,h3{
     justify-content: center;
     align-items: center;
     column-gap: .5rem;
-    font-size: 20px;
+    font-size: 25px;
+    color: #b54769;
     font-weight: var(--font-semi-bold);
     margin-bottom: 2.5rem;
 }
@@ -605,10 +601,10 @@ h2,h3{
     color: #ff004f;
     list-style: none;
     font-size: 60px;
-    font-weight: 500;
+    font-weight: 400;
     position: relative;
     top: 0;
-    animation: slide 6s steps(4) infinite;
+    animation: slide 7s steps(4) infinite;
 }
 @keyframes slide{
     100%{
@@ -625,15 +621,103 @@ h2,h3{
     left: 0;
     height: 100%;
     width: 100%;
-    background: #000;
+    background: black;
     border-left: 2px solid #ff004f;
-    animation: typing 1.5s steps(10) infinite;
+    animation: typing 2s steps(10) infinite;
 
 }
 @keyframes typing{
     100%{
         left: 100%;
-        margin: 0 -35px 0 35px;
+        margin: 0 -100px 0 35px;
 
     }
 }
+
+/* --------------------------------experience/education----------------------------- */
+
+.wrapper1 {
+    font-size: 2rem;
+    background: #262626;
+    background: linear-gradient(70deg, #262626 0%, #262626 18%, #262626 100%);
+    border-radius: 5px;
+    padding: 1.5rem;
+    /* box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .2); */
+    box-shadow: 0 1.5rem 4rem #b54769;
+    width: 80%;
+    height: 70%;
+    margin: 2rem auto;
+  }
+  
+  ol {
+    list-style-type: none; 
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  
+  .ol-month {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #fff;
+
+  }
+  
+  .exp {
+    position: relative;
+    margin: 0;
+    padding-bottom: 1rem;
+    padding-left: 1.7rem;
+    color: #fff;
+  
+  }
+  
+  .exp:before {
+    content: '';
+    background-color: rgb(145, 145, 145);
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+    left: 4.5px;
+    width: 3px;
+  }
+  
+  .exp:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 7px;
+    height: 12px;
+    width: 12px;
+    border-radius: 15px;
+    background-color: #b54769;
+  }
+  .ed_q{
+    color: #b54769;
+  }
+  .exp1{
+    color: #b54769;
+  }
+  .row1{
+    content: "";
+    display: table;
+    clear: both;
+    column-gap: 50px;
+
+  }
+  .leftcolumn1{    
+    float: left;
+    width: 50%;
+  }
+  .rightcolumn1{
+    float: left;
+    width: 50%;
+  }
+
+  .row1 div:hover{
+    /* background: #b54769;
+    transform: translateY(-5px); */
+    box-shadow: 1px 1px 10px 0 #b54769;
+}
+
+
+
